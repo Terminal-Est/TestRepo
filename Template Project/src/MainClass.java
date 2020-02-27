@@ -1,15 +1,24 @@
+import java.util.Scanner;
 
 public class MainClass {
 
+	private static Scanner sc = new Scanner(System.in);
+	
+	
 	public static void main(String[] args) {
 
-		String fizz = "Fizz";
-		String buzz = "Buzz";
+		String fizz = "";
+		String buzz = "";
 		int loop = 0;
-		int test = 0;
+		
+		System.out.print("Enter line 1: ");
+		fizz = sc.nextLine();
+		
+		System.out.print("Enter line 2: ");
+		buzz = sc.nextLine();
+		
 		PassStuff a = new PassStuff(fizz, buzz);
-		System.out.println(test);
-
+		
 		while (loop <= 2) {
 			System.out.println(fizz);
 			System.out.println(buzz);
